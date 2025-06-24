@@ -1,0 +1,133 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+# Date created = 16:07:09  July 07, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		cpu_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE auto
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:07:09  JULY 07, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ns" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_top -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_ALU -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_ALU
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 ms" -section_id tb_ALU
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_ALU -section_id tb_ALU
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_DATA_SRAM -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_DATA_SRAM
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 ms" -section_id tb_DATA_SRAM
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_DATA_SRAM -section_id tb_DATA_SRAM
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_top -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_top
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 ms" -section_id tb_top
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_top -section_id tb_top
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_tristimulus -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_tristimulus
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_tristimulus -section_id tb_tristimulus
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_PRO_SRAM -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_PRO_SRAM
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 ms" -section_id tb_PRO_SRAM
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_PRO_SRAM -section_id tb_PRO_SRAM
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_IR_register -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_IR_register
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 s" -section_id tb_IR_register
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_IR_register -section_id tb_IR_register
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_counter -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_counter
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 s" -section_id tb_counter
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_counter -section_id tb_counter
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_p_test -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_p_test
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "10 us" -section_id tb_p_test
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_p_test -section_id tb_p_test
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_test -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_test
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "10 us" -section_id tb_test
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_test -section_id tb_test
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE ../user/src/micro_Rom_wire.v
+set_global_assignment -name VERILOG_FILE ../user/src/micro_Rom_reg.v
+set_global_assignment -name VERILOG_FILE ../user/src/PROGREM_SRAM_me.v
+set_global_assignment -name VERILOG_FILE ../user/sim/tb_test.v
+set_global_assignment -name VERILOG_FILE ../user/src/test2.v
+set_global_assignment -name VERILOG_FILE ../user/src/test_1.v
+set_global_assignment -name VERILOG_FILE ../user/src/tristimulus_8.v
+set_global_assignment -name VERILOG_FILE ../user/src/tristimulus_1.v
+set_global_assignment -name VERILOG_FILE ../user/sim/tb_p_test.v
+set_global_assignment -name VERILOG_FILE ../user/src/p_test.v
+set_global_assignment -name VERILOG_FILE ../user/src/tb_top.v
+set_global_assignment -name VERILOG_FILE ../user/sim/tb_IR_register.v
+set_global_assignment -name VERILOG_FILE ../user/sim/tb_PRO_SRAM.v
+set_global_assignment -name VERILOG_FILE ../user/src/top.v
+set_global_assignment -name VERILOG_FILE ../user/sim/tb_tristimulus.v
+set_global_assignment -name VERILOG_FILE ../user/src/IR_register.v
+set_global_assignment -name VERILOG_FILE ../user/sim/tb_DATA_SRAM.v
+set_global_assignment -name VERILOG_FILE ../user/src/DATA_SRAM.v
+set_global_assignment -name VERILOG_FILE ../user/src/the_mux_switch_2.v
+set_global_assignment -name VERILOG_FILE ../user/src/the_mux_switch_1.v
+set_global_assignment -name VERILOG_FILE ../user/src/register_stack.v
+set_global_assignment -name VERILOG_FILE ../user/src/PC_counter.v
+set_global_assignment -name VERILOG_FILE ../user/src/fenpin_notuse.v
+set_global_assignment -name VERILOG_FILE ../user/src/counter.v
+set_global_assignment -name VERILOG_FILE ../user/src/ALU.v
+set_global_assignment -name VERILOG_FILE ../user/src/addr_reg.v
+set_global_assignment -name VERILOG_FILE ../user/sim/tb_the_mux_switch_2.v
+set_global_assignment -name VERILOG_FILE ../user/sim/tb_the_mux_switch_1.v
+set_global_assignment -name VERILOG_FILE ../user/sim/tb_register_stack.v
+set_global_assignment -name VERILOG_FILE ../user/sim/tb_pc_counter.v
+set_global_assignment -name VERILOG_FILE ../user/sim/tb_fenpin.v
+set_global_assignment -name VERILOG_FILE ../user/sim/tb_counter.v
+set_global_assignment -name VERILOG_FILE ../user/sim/tb_ALU.v
+set_global_assignment -name QIP_FILE ip_core/PROGRAM_RAM_16_256/PROGRAM_RAM.qip
+set_global_assignment -name QIP_FILE ip_core/DATARAM_RAM_8_256/DATARAM_RAM_8_256.qip
+set_global_assignment -name EDA_TEST_BENCH_FILE ../user/sim/tb_ALU.v -section_id tb_ALU
+set_global_assignment -name EDA_TEST_BENCH_FILE ../user/sim/tb_DATA_SRAM.v -section_id tb_DATA_SRAM
+set_global_assignment -name EDA_TEST_BENCH_FILE ../user/src/tb_top.v -section_id tb_top
+set_global_assignment -name EDA_TEST_BENCH_FILE ../user/sim/tb_tristimulus.v -section_id tb_tristimulus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../user/sim/tb_PRO_SRAM.v -section_id tb_PRO_SRAM
+set_global_assignment -name EDA_TEST_BENCH_FILE ../user/sim/tb_IR_register.v -section_id tb_IR_register
+set_global_assignment -name EDA_TEST_BENCH_FILE ../user/sim/tb_counter.v -section_id tb_counter
+set_global_assignment -name EDA_TEST_BENCH_FILE ../user/sim/tb_p_test.v -section_id tb_p_test
+set_global_assignment -name EDA_TEST_BENCH_FILE ../user/sim/tb_test.v -section_id tb_test
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

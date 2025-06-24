@@ -1,0 +1,66 @@
+transcript on
+if ![file isdirectory verilog_libs] {
+	file mkdir verilog_libs
+}
+
+vlib verilog_libs/altera_ver
+vmap altera_ver ./verilog_libs/altera_ver
+vlog -vlog01compat -work altera_ver {d:/quartus_2/quartus/eda/sim_lib/altera_primitives.v}
+
+vlib verilog_libs/lpm_ver
+vmap lpm_ver ./verilog_libs/lpm_ver
+vlog -vlog01compat -work lpm_ver {d:/quartus_2/quartus/eda/sim_lib/220model.v}
+
+vlib verilog_libs/sgate_ver
+vmap sgate_ver ./verilog_libs/sgate_ver
+vlog -vlog01compat -work sgate_ver {d:/quartus_2/quartus/eda/sim_lib/sgate.v}
+
+vlib verilog_libs/altera_mf_ver
+vmap altera_mf_ver ./verilog_libs/altera_mf_ver
+vlog -vlog01compat -work altera_mf_ver {d:/quartus_2/quartus/eda/sim_lib/altera_mf.v}
+
+vlib verilog_libs/altera_lnsim_ver
+vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver
+vlog -sv -work altera_lnsim_ver {d:/quartus_2/quartus/eda/sim_lib/altera_lnsim.sv}
+
+vlib verilog_libs/cycloneiv_hssi_ver
+vmap cycloneiv_hssi_ver ./verilog_libs/cycloneiv_hssi_ver
+vlog -vlog01compat -work cycloneiv_hssi_ver {d:/quartus_2/quartus/eda/sim_lib/cycloneiv_hssi_atoms.v}
+
+vlib verilog_libs/cycloneiv_pcie_hip_ver
+vmap cycloneiv_pcie_hip_ver ./verilog_libs/cycloneiv_pcie_hip_ver
+vlog -vlog01compat -work cycloneiv_pcie_hip_ver {d:/quartus_2/quartus/eda/sim_lib/cycloneiv_pcie_hip_atoms.v}
+
+vlib verilog_libs/cycloneiv_ver
+vmap cycloneiv_ver ./verilog_libs/cycloneiv_ver
+vlog -vlog01compat -work cycloneiv_ver {d:/quartus_2/quartus/eda/sim_lib/cycloneiv_atoms.v}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/user/src {E:/the_all_project/fpga_project/cpu/user/src/micro_Rom_wire.v}
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/user/src {E:/the_all_project/fpga_project/cpu/user/src/tristimulus_8.v}
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/user/src {E:/the_all_project/fpga_project/cpu/user/src/tristimulus_1.v}
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/user/src {E:/the_all_project/fpga_project/cpu/user/src/p_test.v}
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/user/src {E:/the_all_project/fpga_project/cpu/user/src/top.v}
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/user/src {E:/the_all_project/fpga_project/cpu/user/src/IR_register.v}
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/user/src {E:/the_all_project/fpga_project/cpu/user/src/the_mux_switch_2.v}
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/user/src {E:/the_all_project/fpga_project/cpu/user/src/the_mux_switch_1.v}
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/user/src {E:/the_all_project/fpga_project/cpu/user/src/register_stack.v}
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/user/src {E:/the_all_project/fpga_project/cpu/user/src/PC_counter.v}
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/user/src {E:/the_all_project/fpga_project/cpu/user/src/ALU.v}
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/user/src {E:/the_all_project/fpga_project/cpu/user/src/addr_reg.v}
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/prj/ip_core/PROGRAM_RAM_16_256 {E:/the_all_project/fpga_project/cpu/prj/ip_core/PROGRAM_RAM_16_256/PROGRAM_RAM.v}
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/prj/ip_core/DATARAM_RAM_8_256 {E:/the_all_project/fpga_project/cpu/prj/ip_core/DATARAM_RAM_8_256/DATARAM_RAM_8_256.v}
+
+vlog -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/prj/../user/src {E:/the_all_project/fpga_project/cpu/prj/../user/src/tb_top.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  tb_top
+
+add wave *
+view structure
+view signals
+run 1 ms

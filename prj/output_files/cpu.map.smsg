@@ -1,0 +1,7 @@
+Warning (10268): Verilog HDL information at PROGREM_SRAM_me.v(15): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at top.v(142): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at top.v(181): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at top.v(57): object "ALU_B" differs only in case from object "alu_b" in the same scope
+Warning (10268): Verilog HDL information at DATA_SRAM.v(12): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at register_stack.v(39): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at ALU.v(20): always construct contains both blocking and non-blocking assignments

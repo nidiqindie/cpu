@@ -1,0 +1,5 @@
+
+State Machine - |top|state_big
+Name state_big.START 
+state_big.IDLE 0 
+state_big.START 1 

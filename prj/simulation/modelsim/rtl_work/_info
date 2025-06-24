@@ -1,0 +1,385 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/a1321/Desktop/fpga_project/cpu/prj/simulation/modelsim
+T_opt
+!s110 1720776422
+VGa9l]l5HRb<iFi^iPJJa31
+04 7 4 work tb_test fast 0
+=1-b48c9da57957-6690f6e6-2d0-f58
+Z1 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.5;63
+R0
+T_opt1
+!s110 1720885401
+V]i[RfJ^JWLdDeTa2D;W9l0
+Z4 04 6 4 work tb_top fast 0
+=1-b48c9da57957-6692a099-b0-e0
+R1
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1725359926
+VU36?kZCE]HDjfCHof]Z^22
+R4
+=1-b48c9da57957-66d6e736-1a9-192c
+R1
+R2
+n@_opt2
+R3
+R0
+T_opt3
+!s110 1725360145
+Vz5a]ag3nbC1JJPWCcC=cb3
+R4
+=1-b48c9da57957-66d6e811-24-4b04
+R1
+R2
+n@_opt3
+R3
+vaddr_reg
+Z5 !s110 1725360144
+!i10b 1
+!s100 GRD]H6T1GEz]U^Bmj@P<L2
+Il12;1NSENSO4BK45e5z@O1
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 dE:/the_all_project/fpga_project/cpu/prj/simulation/modelsim
+w1720593802
+8E:/the_all_project/fpga_project/cpu/user/src/addr_reg.v
+FE:/the_all_project/fpga_project/cpu/user/src/addr_reg.v
+L0 1
+Z8 OL;L;10.5;63
+r1
+!s85 0
+31
+Z9 !s108 1725360144.000000
+!s107 E:/the_all_project/fpga_project/cpu/user/src/addr_reg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/user/src|E:/the_all_project/fpga_project/cpu/user/src/addr_reg.v|
+!i113 0
+Z10 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 !s92 -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/user/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vALU
+R5
+!i10b 1
+!s100 YC9_JKoTQ=aeAT;daML7R3
+I^U=>?Y5@FG<VVneNS5]o_3
+R6
+R7
+w1725359590
+8E:/the_all_project/fpga_project/cpu/user/src/ALU.v
+FE:/the_all_project/fpga_project/cpu/user/src/ALU.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 E:/the_all_project/fpga_project/cpu/user/src/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/user/src|E:/the_all_project/fpga_project/cpu/user/src/ALU.v|
+!i113 0
+R10
+R11
+R2
+n@a@l@u
+vDATARAM_RAM_8_256
+R5
+!i10b 1
+!s100 m:=knmAO[IlmEla[fQ<[z3
+Ia2F^h4M92DOal4nfQAbdJ1
+R6
+R7
+w1720947871
+8E:/the_all_project/fpga_project/cpu/prj/ip_core/DATARAM_RAM_8_256/DATARAM_RAM_8_256.v
+FE:/the_all_project/fpga_project/cpu/prj/ip_core/DATARAM_RAM_8_256/DATARAM_RAM_8_256.v
+Z12 L0 39
+R8
+r1
+!s85 0
+31
+R9
+!s107 E:/the_all_project/fpga_project/cpu/prj/ip_core/DATARAM_RAM_8_256/DATARAM_RAM_8_256.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/prj/ip_core/DATARAM_RAM_8_256|E:/the_all_project/fpga_project/cpu/prj/ip_core/DATARAM_RAM_8_256/DATARAM_RAM_8_256.v|
+!i113 0
+R10
+!s92 -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/prj/ip_core/DATARAM_RAM_8_256 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@d@a@t@a@r@a@m_@r@a@m_8_256
+vIR_register
+Z13 !s110 1725360143
+!i10b 1
+!s100 oS<9H]?6kIDB8WS6iEDzb2
+IO`BP6FYW4PHO@E>@]HkXV1
+R6
+R7
+w1720945635
+8E:/the_all_project/fpga_project/cpu/user/src/IR_register.v
+FE:/the_all_project/fpga_project/cpu/user/src/IR_register.v
+L0 2
+R8
+r1
+!s85 0
+31
+Z14 !s108 1725360143.000000
+!s107 E:/the_all_project/fpga_project/cpu/user/src/IR_register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/user/src|E:/the_all_project/fpga_project/cpu/user/src/IR_register.v|
+!i113 0
+R10
+R11
+R2
+n@i@r_register
+vmicro_Rom_wire
+R13
+!i10b 1
+!s100 C?PG6FoXLcZ13Snn;_Pa61
+Io7W;L[;BFUzUDgc^_?Ik41
+R6
+R7
+w1720955995
+8E:/the_all_project/fpga_project/cpu/user/src/micro_Rom_wire.v
+FE:/the_all_project/fpga_project/cpu/user/src/micro_Rom_wire.v
+Z15 L0 26
+R8
+r1
+!s85 0
+31
+R14
+!s107 E:/the_all_project/fpga_project/cpu/user/src/micro_Rom_wire.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/user/src|E:/the_all_project/fpga_project/cpu/user/src/micro_Rom_wire.v|
+!i113 0
+R10
+R11
+R2
+nmicro_@rom_wire
+vp_test
+R13
+!i10b 1
+!s100 @nlzFcZB@3d^=9m^9eO:b3
+ITFVB<0fR@GDM<gNU42:e50
+R6
+R7
+w1720955867
+8E:/the_all_project/fpga_project/cpu/user/src/p_test.v
+FE:/the_all_project/fpga_project/cpu/user/src/p_test.v
+R15
+R8
+r1
+!s85 0
+31
+R14
+!s107 E:/the_all_project/fpga_project/cpu/user/src/p_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/user/src|E:/the_all_project/fpga_project/cpu/user/src/p_test.v|
+!i113 0
+R10
+R11
+R2
+vPC_counter
+R5
+!i10b 1
+!s100 fJV@Afn:WTQDodHPb568<3
+I5Y5NI[BSFKoE?lWV80j_72
+R6
+R7
+w1720943750
+8E:/the_all_project/fpga_project/cpu/user/src/PC_counter.v
+FE:/the_all_project/fpga_project/cpu/user/src/PC_counter.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 E:/the_all_project/fpga_project/cpu/user/src/PC_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/user/src|E:/the_all_project/fpga_project/cpu/user/src/PC_counter.v|
+!i113 0
+R10
+R11
+R2
+n@p@c_counter
+vPROGRAM_RAM
+R5
+!i10b 1
+!s100 SakAIeEn<Ogjl3z3hKY]z1
+IKRNTN76P?kNzdc_`aCd?22
+R6
+R7
+w1720875759
+8E:/the_all_project/fpga_project/cpu/prj/ip_core/PROGRAM_RAM_16_256/PROGRAM_RAM.v
+FE:/the_all_project/fpga_project/cpu/prj/ip_core/PROGRAM_RAM_16_256/PROGRAM_RAM.v
+R12
+R8
+r1
+!s85 0
+31
+R9
+!s107 E:/the_all_project/fpga_project/cpu/prj/ip_core/PROGRAM_RAM_16_256/PROGRAM_RAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/prj/ip_core/PROGRAM_RAM_16_256|E:/the_all_project/fpga_project/cpu/prj/ip_core/PROGRAM_RAM_16_256/PROGRAM_RAM.v|
+!i113 0
+R10
+!s92 -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/prj/ip_core/PROGRAM_RAM_16_256 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@p@r@o@g@r@a@m_@r@a@m
+vregister_stack
+R5
+!i10b 1
+!s100 ]doUM_L[T0HNQ>^QZTUQk2
+IM<^e]LoC1?XmG=b`l3oU[3
+R6
+R7
+w1720947028
+8E:/the_all_project/fpga_project/cpu/user/src/register_stack.v
+FE:/the_all_project/fpga_project/cpu/user/src/register_stack.v
+L0 25
+R8
+r1
+!s85 0
+31
+R9
+!s107 E:/the_all_project/fpga_project/cpu/user/src/register_stack.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/user/src|E:/the_all_project/fpga_project/cpu/user/src/register_stack.v|
+!i113 0
+R10
+R11
+R2
+vtb_top
+R5
+!i10b 1
+!s100 i:ZDIbeSoA;hn4<e6eY?e2
+I_bMzRM>AfJgIk8fA9glQN1
+R6
+R7
+w1725359825
+8E:/the_all_project/fpga_project/cpu/prj/../user/src/tb_top.v
+FE:/the_all_project/fpga_project/cpu/prj/../user/src/tb_top.v
+L0 27
+R8
+r1
+!s85 0
+31
+R9
+!s107 E:/the_all_project/fpga_project/cpu/prj/../user/src/tb_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/prj/../user/src|E:/the_all_project/fpga_project/cpu/prj/../user/src/tb_top.v|
+!i113 0
+R10
+!s92 -vlog01compat -work work +incdir+E:/the_all_project/fpga_project/cpu/prj/../user/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vthe_mux_switch_1
+R5
+!i10b 1
+!s100 gF2oCeR@jQ?[6GPQkF2ZZ2
+IDDJ1YQc2I][3OoVeicP[B0
+R6
+R7
+w1720774162
+8E:/the_all_project/fpga_project/cpu/user/src/the_mux_switch_1.v
+FE:/the_all_project/fpga_project/cpu/user/src/the_mux_switch_1.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 E:/the_all_project/fpga_project/cpu/user/src/the_mux_switch_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/user/src|E:/the_all_project/fpga_project/cpu/user/src/the_mux_switch_1.v|
+!i113 0
+R10
+R11
+R2
+vthe_mux_switch_2
+R13
+!i10b 1
+!s100 j@JHG6Q]<BF96LMk]1lHk2
+IMc;NlGYegfG=:1WZ^jInT3
+R6
+R7
+w1720774233
+8E:/the_all_project/fpga_project/cpu/user/src/the_mux_switch_2.v
+FE:/the_all_project/fpga_project/cpu/user/src/the_mux_switch_2.v
+L0 1
+R8
+r1
+!s85 0
+31
+R14
+!s107 E:/the_all_project/fpga_project/cpu/user/src/the_mux_switch_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/user/src|E:/the_all_project/fpga_project/cpu/user/src/the_mux_switch_2.v|
+!i113 0
+R10
+R11
+R2
+vtop
+R13
+!i10b 1
+!s100 Be:MzYT_o?KE2n93_FViP2
+IdlQ][L[X6iV7jiLGoeL]S1
+R6
+R7
+w1720953320
+8E:/the_all_project/fpga_project/cpu/user/src/top.v
+FE:/the_all_project/fpga_project/cpu/user/src/top.v
+L0 1
+R8
+r1
+!s85 0
+31
+R14
+!s107 E:/the_all_project/fpga_project/cpu/user/src/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/user/src|E:/the_all_project/fpga_project/cpu/user/src/top.v|
+!i113 0
+R10
+R11
+R2
+vtristimulus_1
+R13
+!i10b 1
+!s100 ]GeoEmIzS;NL6bNDzm3T62
+I[49i7P9f^UeX`ilO6nhie0
+R6
+R7
+w1720698975
+8E:/the_all_project/fpga_project/cpu/user/src/tristimulus_1.v
+FE:/the_all_project/fpga_project/cpu/user/src/tristimulus_1.v
+L0 1
+R8
+r1
+!s85 0
+31
+R14
+!s107 E:/the_all_project/fpga_project/cpu/user/src/tristimulus_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/user/src|E:/the_all_project/fpga_project/cpu/user/src/tristimulus_1.v|
+!i113 0
+R10
+R11
+R2
+vtristimulus_8
+R13
+!i10b 1
+!s100 @2gid5L?QzH6O`?PjeH6K1
+IhgKA0jn8i<aE6U:lcTaKC2
+R6
+R7
+w1720698802
+8E:/the_all_project/fpga_project/cpu/user/src/tristimulus_8.v
+FE:/the_all_project/fpga_project/cpu/user/src/tristimulus_8.v
+L0 1
+R8
+r1
+!s85 0
+31
+R14
+!s107 E:/the_all_project/fpga_project/cpu/user/src/tristimulus_8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/the_all_project/fpga_project/cpu/user/src|E:/the_all_project/fpga_project/cpu/user/src/tristimulus_8.v|
+!i113 0
+R10
+R11
+R2

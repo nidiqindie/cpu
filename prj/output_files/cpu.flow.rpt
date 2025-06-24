@@ -1,0 +1,185 @@
+Flow report for cpu
+Tue Sep 03 18:42:01 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Flow Summary                                                                          ;
++------------------------------------+--------------------------------------------------+
+; Flow Status                        ; Successful - Tue Sep 03 18:42:01 2024            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; cpu                                              ;
+; Top-level Entity Name              ; top                                              ;
+; Family                             ; Cyclone IV GX                                    ;
+; Total logic elements               ; 236 / 21,280 ( 1 % )                             ;
+;     Total combinational functions  ; 228 / 21,280 ( 1 % )                             ;
+;     Dedicated logic registers      ; 97 / 21,280 ( < 1 % )                            ;
+; Total registers                    ; 97                                               ;
+; Total pins                         ; 54 / 167 ( 32 % )                                ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 6,144 / 774,144 ( < 1 % )                        ;
+; Embedded Multiplier 9-bit elements ; 0 / 80 ( 0 % )                                   ;
+; Total GXB Receiver Channel PCS     ; 0 / 4 ( 0 % )                                    ;
+; Total GXB Receiver Channel PMA     ; 0 / 4 ( 0 % )                                    ;
+; Total GXB Transmitter Channel PCS  ; 0 / 4 ( 0 % )                                    ;
+; Total GXB Transmitter Channel PMA  ; 0 / 4 ( 0 % )                                    ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                    ;
+; Device                             ; EP4CGX22CF19C6                                   ;
+; Timing Models                      ; Final                                            ;
++------------------------------------+--------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 09/03/2024 18:41:47 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; cpu                 ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                        ;
++--------------------------------------+---------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                             ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+---------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 96830616788453.172536010712588                    ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                ; --            ; --          ; tb_ALU         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                ; --            ; --          ; tb_DATA_SRAM   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                ; --            ; --          ; tb_top         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                ; --            ; --          ; tb_tristimulus ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                ; --            ; --          ; tb_PRO_SRAM    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                ; --            ; --          ; tb_IR_register ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                ; --            ; --          ; tb_counter     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                ; --            ; --          ; tb_p_test      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                ; --            ; --          ; tb_test        ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_top                                            ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                       ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                                ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                   ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; ../user/sim/tb_ALU.v                              ; --            ; --          ; tb_ALU         ;
+; EDA_TEST_BENCH_FILE                  ; ../user/sim/tb_DATA_SRAM.v                        ; --            ; --          ; tb_DATA_SRAM   ;
+; EDA_TEST_BENCH_FILE                  ; ../user/src/tb_top.v                              ; --            ; --          ; tb_top         ;
+; EDA_TEST_BENCH_FILE                  ; ../user/sim/tb_tristimulus.v                      ; --            ; --          ; tb_tristimulus ;
+; EDA_TEST_BENCH_FILE                  ; ../user/sim/tb_PRO_SRAM.v                         ; --            ; --          ; tb_PRO_SRAM    ;
+; EDA_TEST_BENCH_FILE                  ; ../user/sim/tb_IR_register.v                      ; --            ; --          ; tb_IR_register ;
+; EDA_TEST_BENCH_FILE                  ; ../user/sim/tb_counter.v                          ; --            ; --          ; tb_counter     ;
+; EDA_TEST_BENCH_FILE                  ; ../user/sim/tb_p_test.v                           ; --            ; --          ; tb_p_test      ;
+; EDA_TEST_BENCH_FILE                  ; ../user/sim/tb_test.v                             ; --            ; --          ; tb_test        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_ALU                                            ; --            ; --          ; tb_ALU         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_DATA_SRAM                                      ; --            ; --          ; tb_DATA_SRAM   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_top                                            ; --            ; --          ; tb_top         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_tristimulus                                    ; --            ; --          ; tb_tristimulus ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_PRO_SRAM                                       ; --            ; --          ; tb_PRO_SRAM    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_IR_register                                    ; --            ; --          ; tb_IR_register ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_counter                                        ; --            ; --          ; tb_counter     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_p_test                                         ; --            ; --          ; tb_p_test      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_test                                           ; --            ; --          ; tb_test        ;
+; EDA_TEST_BENCH_NAME                  ; tb_ALU                                            ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; tb_DATA_SRAM                                      ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; tb_top                                            ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; tb_tristimulus                                    ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; tb_PRO_SRAM                                       ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; tb_IR_register                                    ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; tb_counter                                        ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; tb_p_test                                         ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; tb_test                                           ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 ms                                              ; --            ; --          ; tb_ALU         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 ms                                              ; --            ; --          ; tb_DATA_SRAM   ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 ms                                              ; --            ; --          ; tb_top         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 ms                                              ; --            ; --          ; tb_PRO_SRAM    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 s                                               ; --            ; --          ; tb_IR_register ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 s                                               ; --            ; --          ; tb_counter     ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 us                                             ; --            ; --          ; tb_p_test      ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 us                                             ; --            ; --          ; tb_test        ;
+; EDA_TIME_SCALE                       ; 1 ns                                              ; --            ; --          ; eda_simulation ;
+; IP_TOOL_NAME                         ; RAM: 1-PORT                                       ; --            ; --          ; --             ;
+; IP_TOOL_NAME                         ; RAM: 1-PORT                                       ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                              ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                              ; --            ; --          ; --             ;
+; MISC_FILE                            ; ip_core/PROGRAM_RAM_16_256/PROGRAM_RAM_bb.v       ; --            ; --          ; --             ;
+; MISC_FILE                            ; ip_core/PROGRAM_RAM_16_256/PROGRAM_RAM_syn.v      ; --            ; --          ; --             ;
+; MISC_FILE                            ; ip_core/DATARAM_RAM_8_256/DATARAM_RAM_8_256_bb.v  ; --            ; --          ; --             ;
+; MISC_FILE                            ; ip_core/DATARAM_RAM_8_256/DATARAM_RAM_8_256_syn.v ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; 16764057                                          ; --            ; top         ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                             ; --            ; top         ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                            ; --            ; top         ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                      ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; top                                               ; cpu           ; --          ; --             ;
++--------------------------------------+---------------------------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4697 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:06     ; 4.0                     ; 6135 MB             ; 00:00:04                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4612 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4733 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4585 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:07                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; LAPTOP-HO20J2ON  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; LAPTOP-HO20J2ON  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; LAPTOP-HO20J2ON  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; LAPTOP-HO20J2ON  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-HO20J2ON  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off cpu -c cpu
+quartus_fit --read_settings_files=off --write_settings_files=off cpu -c cpu
+quartus_asm --read_settings_files=off --write_settings_files=off cpu -c cpu
+quartus_sta cpu -c cpu
+quartus_eda --read_settings_files=off --write_settings_files=off cpu -c cpu
+
+
+
